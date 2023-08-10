@@ -1,0 +1,107 @@
+.form-box {
+	height: 91.7vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #282c34;
+	.phone-regular-box {
+		display: flex;
+		flex-direction: column;
+		font-size: 3rem;
+		color: #fff;
+		align-items: center;
+		input {
+			outline: 1px solid;
+			font-size: initial;
+			padding: 15px 15px;
+			font-size: 1rem;
+			border-radius: 8px;
+			margin: 0 0 50px;
+			position: relative;
+		}
+		.pass {
+			border: 3px solid #00b521;
+		}
+		.pass-img {
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				right: -120px;
+				top: -92px;
+				width: 50px;
+				height: 50px;
+				background: url('../images/pass.png') no-repeat;
+				background-size: 35px;
+			}
+		}
+		.fail-img {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				right: -120px;
+				top: -92px;
+				width: 50px;
+				height: 50px;
+				background: url('../images/fail.png') no-repeat;
+				background-size: 35px;
+			}
+		}
+
+		.fail {
+			border: 3px solid rgb(173, 7, 7);
+			animation: fail 0.2s linear;
+		}
+		.button-check {
+			border: 1px solid #fff;
+			display: inline-block;
+			width: 200px;
+			border-radius: 15px;
+			transition: all 0.3s;
+			position: relative;
+			overflow: hidden;
+			background-color: transparent;
+			&:hover {
+				background-color: #7097e4;
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@keyframes fail {
+	0% {
+		left: 0;
+	}
+	10% {
+		left: 2px;
+	}
+	20% {
+		left: 0;
+	}
+	30% {
+		left: -2px;
+	}
+	40% {
+		left: 0;
+	}
+	50% {
+		left: 2px;
+	}
+	60% {
+		left: 0;
+	}
+	70% {
+		left: -2px;
+	}
+	80% {
+		left: 0;
+	}
+	90% {
+		left: 2px;
+	}
+	100% {
+		left: 0;
+	}
+}

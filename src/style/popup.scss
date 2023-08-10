@@ -1,0 +1,57 @@
+.popup-main {
+	transform: translateX(-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+}
+.popup-info {
+	max-width: 800px;
+	border: 2px solid rgb(161, 0, 0);
+	border-radius: 10px;
+	padding: 15px;
+	background-color: #fff;
+	animation: popup 0.5s both linear;
+	transform: scale(0) translate(-50%);
+	color: rgb(161, 0, 0);
+	h1 {
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+}
+
+@keyframes popup {
+	0% {
+		transform: scale(0);
+	}
+	10% {
+		transform: scale(0.2);
+	}
+	20% {
+		transform: scale(0.4);
+	}
+	30% {
+		transform: scale(0.6);
+	}
+	40% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.1);
+	}
+	70% {
+		transform: scale(0.7);
+	}
+	80% {
+		transform: scale(0.8);
+	}
+	90% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
