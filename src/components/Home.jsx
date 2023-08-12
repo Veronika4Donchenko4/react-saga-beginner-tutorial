@@ -14,7 +14,7 @@ const Home = () => {
 					target='_blank'
 					rel='noopener noreferrer'
 				>
-					Learn React
+					React learn 
 				</a>
 			</div>
 		</>
