@@ -5,7 +5,7 @@ const PopupInfo = () => {
 				<div className='popup-info'>
 					<h1>Помилка</h1>
 					<p>
-						не вірний ноер введіть в форматі +
+						Some change
 380 ..					</p>
 				</div>
 			</div>
